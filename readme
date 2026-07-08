@@ -1,0 +1,13 @@
+# CinemaRank
+CinemaRank is an application that ranks movies from a dataset of over 100,000 films using a SplayTree and MaxHeap. Users can search based on vote count or rating, and compare the performance of both datastructures.
+
+## Dataset
+Download the TMDB dataset from Kaggle and place the CSV in a data/ folder inside the project directory.
+https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies
+
+## Build & Run
+g++ -std=c++17 -Wall -O2 main.cpp CSVReader.cpp -o cinemarank
+./cinemarank
+
+## Usage
+Select option 1 to load the dataset, then use options 2-7 to query and compare results.
