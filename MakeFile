@@ -1,0 +1,11 @@
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -O2
+
+SRC = main.cpp CSVReader.cpp
+TARGET = cinemarank
+
+all:
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+
+clean:
+	rm -f $(TARGET)
